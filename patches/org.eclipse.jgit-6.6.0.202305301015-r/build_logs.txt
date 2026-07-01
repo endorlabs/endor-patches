@@ -1,0 +1,289 @@
+~/.cache/bazel/_bazel_runner/47e90624d37f4ce04f6ae9cb328f6bdd/sandbox/linux-sandbox/2/execroot/jgit/external.copy/jgit-6.6.0.202305301015-r-endor-2024-11-25 ~/.cache/bazel/_bazel_runner/47e90624d37f4ce04f6ae9cb328f6bdd/sandbox/linux-sandbox/2/execroot/jgit
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] JGit - Core                                                        [jar]
+[INFO] JGit - JUnit Utility Classes                                       [jar]
+[INFO] 
+[INFO] Using the MultiThreadedBuilder implementation with a thread count of 2
+[INFO] 
+[INFO] -----------------< org.eclipse.jgit:org.eclipse.jgit >------------------
+[INFO] Building JGit - Core 6.6.0.202305301015-r-endor-2024-11-25         [1/2]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.2.0:clean (default-clean) @ org.eclipse.jgit ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.3.0:enforce (enforce-maven) @ org.eclipse.jgit ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.3.0:parse-version (set-osgi-version) @ org.eclipse.jgit ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.10:prepare-agent (default-prepare-agent) @ org.eclipse.jgit ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- maven-antrun-plugin:3.1.0:run (translate-qualifier) @ org.eclipse.jgit ---
+[INFO] Executing tasks
+[INFO]      [copy] Copying 1 file to /tmp/project/org.eclipse.jgit/target/META-INF
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-antrun-plugin:3.1.0:run (translate-source-qualifier) @ org.eclipse.jgit ---
+[INFO] Executing tasks
+[INFO]      [copy] Copying 1 file to /tmp/project/org.eclipse.jgit/target/META-INF
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ org.eclipse.jgit ---
+[INFO] Copying 2 resources from  to target/classes
+[INFO] Copying 5 resources from resources to target/classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.11.0:compile (default-compile) @ org.eclipse.jgit ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling with eclipse [debug deprecation release 11] to target/classes
+[WARNING] /tmp/project/org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchProcess.java:[569,8] The method getRefs(java.lang.String) from the type org.eclipse.jgit.lib.RefDatabase is deprecated
+[INFO] /tmp/project/org.eclipse.jgit/src/org/eclipse/jgit/treewalk/TreeWalk.java:[1386,20] At least one of the problems in category 'org.eclipse.jdt.core.compiler.problem.unusedTypeParameter' is not analysed due to a compiler option being ignored
+[INFO] /tmp/project/org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/dfs/DfsInserter.java:[639,22] At least one of the problems in category 'org.eclipse.jdt.core.compiler.problem.potentiallyUnclosedCloseable' is not analysed due to a compiler option being ignored
+[INFO] 
+[INFO] >>> maven-source-plugin:3.2.1:jar (attach-sources) > generate-sources @ org.eclipse.jgit >>>
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.3.0:enforce (enforce-maven) @ org.eclipse.jgit ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.3.0:parse-version (set-osgi-version) @ org.eclipse.jgit ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.10:prepare-agent (default-prepare-agent) @ org.eclipse.jgit ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] <<< maven-source-plugin:3.2.1:jar (attach-sources) < generate-sources @ org.eclipse.jgit <<<
+[INFO] 
+[INFO] 
+[INFO] --- maven-source-plugin:3.2.1:jar (attach-sources) @ org.eclipse.jgit ---
+[INFO] Building jar: /tmp/project/org.eclipse.jgit/target/org.eclipse.jgit-6.6.0.202305301015-r-endor-2024-11-25-sources.jar
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ org.eclipse.jgit ---
+[INFO] skip non existing resourceDirectory /tmp/project/org.eclipse.jgit/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.11.0:testCompile (default-testCompile) @ org.eclipse.jgit ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0:test (default-test) @ org.eclipse.jgit ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.3.0:jar (default-jar) @ org.eclipse.jgit ---
+[INFO] Building jar: /tmp/project/org.eclipse.jgit/target/org.eclipse.jgit-6.6.0.202305301015-r-endor-2024-11-25.jar
+[INFO] 
+[INFO] --- maven-javadoc-plugin:3.5.0:jar (default) @ org.eclipse.jgit ---
+[INFO] Skipping javadoc generation
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.3.0:enforce (enforce-maven) @ org.eclipse.jgit ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.3.0:parse-version (set-osgi-version) @ org.eclipse.jgit ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.10:prepare-agent (default-prepare-agent) @ org.eclipse.jgit ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-antrun-plugin:3.1.0:run (translate-qualifier) @ org.eclipse.jgit ---
+[INFO] Executing tasks
+[INFO]      [copy] Copying 1 file to /tmp/project/org.eclipse.jgit/target/META-INF
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-antrun-plugin:3.1.0:run (translate-source-qualifier) @ org.eclipse.jgit ---
+[INFO] Executing tasks
+[INFO]      [copy] Copying 1 file to /tmp/project/org.eclipse.jgit/target/META-INF
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ org.eclipse.jgit ---
+[INFO] Copying 2 resources from  to target/classes
+[INFO] Copying 5 resources from resources to target/classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.11.0:compile (default-compile) @ org.eclipse.jgit ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] >>> maven-source-plugin:3.2.1:jar (attach-sources) > generate-sources @ org.eclipse.jgit >>>
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.3.0:enforce (enforce-maven) @ org.eclipse.jgit ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.3.0:parse-version (set-osgi-version) @ org.eclipse.jgit ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.10:prepare-agent (default-prepare-agent) @ org.eclipse.jgit ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] <<< maven-source-plugin:3.2.1:jar (attach-sources) < generate-sources @ org.eclipse.jgit <<<
+[INFO] 
+[INFO] 
+[INFO] --- maven-source-plugin:3.2.1:jar (attach-sources) @ org.eclipse.jgit ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ org.eclipse.jgit ---
+[INFO] skip non existing resourceDirectory /tmp/project/org.eclipse.jgit/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.11.0:testCompile (default-testCompile) @ org.eclipse.jgit ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0:test (default-test) @ org.eclipse.jgit ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.3.0:jar (default-jar) @ org.eclipse.jgit ---
+[INFO] 
+[INFO] --- maven-javadoc-plugin:3.5.0:jar (default) @ org.eclipse.jgit ---
+[INFO] Skipping javadoc generation
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.10:report (default-report) @ org.eclipse.jgit ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.10:check (default-check) @ org.eclipse.jgit ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- japicmp-maven-plugin:0.17.2:cmp (default) @ org.eclipse.jgit ---
+[INFO] Written file '/tmp/project/org.eclipse.jgit/target/japicmp/japicmp.diff'.
+[INFO] Written file '/tmp/project/org.eclipse.jgit/target/japicmp/japicmp.xml'.
+[INFO] Written file '/tmp/project/org.eclipse.jgit/target/japicmp/japicmp.html'.
+[INFO] 
+[INFO] --- maven-install-plugin:3.1.1:install (default-install) @ org.eclipse.jgit ---
+[INFO] Installing /tmp/project/org.eclipse.jgit/pom.xml to /var/maven/.m2/repository/org/eclipse/jgit/org.eclipse.jgit/6.6.0.202305301015-r-endor-2024-11-25/org.eclipse.jgit-6.6.0.202305301015-r-endor-2024-11-25.pom
+[INFO] Installing /tmp/project/org.eclipse.jgit/target/org.eclipse.jgit-6.6.0.202305301015-r-endor-2024-11-25.jar to /var/maven/.m2/repository/org/eclipse/jgit/org.eclipse.jgit/6.6.0.202305301015-r-endor-2024-11-25/org.eclipse.jgit-6.6.0.202305301015-r-endor-2024-11-25.jar
+[INFO] Installing /tmp/project/org.eclipse.jgit/target/org.eclipse.jgit-6.6.0.202305301015-r-endor-2024-11-25-sources.jar to /var/maven/.m2/repository/org/eclipse/jgit/org.eclipse.jgit/6.6.0.202305301015-r-endor-2024-11-25/org.eclipse.jgit-6.6.0.202305301015-r-endor-2024-11-25-sources.jar
+[INFO] Installing /tmp/project/org.eclipse.jgit/target/org.eclipse.jgit-6.6.0.202305301015-r-endor-2024-11-25-sources.jar to /var/maven/.m2/repository/org/eclipse/jgit/org.eclipse.jgit/6.6.0.202305301015-r-endor-2024-11-25/org.eclipse.jgit-6.6.0.202305301015-r-endor-2024-11-25-sources.jar
+[INFO] 
+[INFO] --------------< org.eclipse.jgit:org.eclipse.jgit.junit >---------------
+[INFO] Building JGit - JUnit Utility Classes 6.6.0.202305301015-r-endor-2024-11-25 [2/2]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.2.0:clean (default-clean) @ org.eclipse.jgit.junit ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.3.0:enforce (enforce-maven) @ org.eclipse.jgit.junit ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.3.0:parse-version (set-osgi-version) @ org.eclipse.jgit.junit ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.10:prepare-agent (default-prepare-agent) @ org.eclipse.jgit.junit ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- maven-antrun-plugin:3.1.0:run (translate-qualifier) @ org.eclipse.jgit.junit ---
+[INFO] Executing tasks
+[INFO]      [copy] Copying 1 file to /tmp/project/org.eclipse.jgit.junit/target/META-INF
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-antrun-plugin:3.1.0:run (translate-source-qualifier) @ org.eclipse.jgit.junit ---
+[INFO] Executing tasks
+[INFO]      [copy] Copying 1 file to /tmp/project/org.eclipse.jgit.junit/target/META-INF
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ org.eclipse.jgit.junit ---
+[INFO] Copying 1 resource from  to target/classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.11.0:compile (default-compile) @ org.eclipse.jgit.junit ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling with eclipse [debug deprecation release 11] to target/classes
+[INFO] 
+[INFO] >>> maven-source-plugin:3.2.1:jar (attach-sources) > generate-sources @ org.eclipse.jgit.junit >>>
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.3.0:enforce (enforce-maven) @ org.eclipse.jgit.junit ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.3.0:parse-version (set-osgi-version) @ org.eclipse.jgit.junit ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.10:prepare-agent (default-prepare-agent) @ org.eclipse.jgit.junit ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] <<< maven-source-plugin:3.2.1:jar (attach-sources) < generate-sources @ org.eclipse.jgit.junit <<<
+[INFO] 
+[INFO] 
+[INFO] --- maven-source-plugin:3.2.1:jar (attach-sources) @ org.eclipse.jgit.junit ---
+[INFO] Building jar: /tmp/project/org.eclipse.jgit.junit/target/org.eclipse.jgit.junit-6.6.0.202305301015-r-endor-2024-11-25-sources.jar
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ org.eclipse.jgit.junit ---
+[INFO] skip non existing resourceDirectory /tmp/project/org.eclipse.jgit.junit/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.11.0:testCompile (default-testCompile) @ org.eclipse.jgit.junit ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0:test (default-test) @ org.eclipse.jgit.junit ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.3.0:jar (default-jar) @ org.eclipse.jgit.junit ---
+[INFO] Building jar: /tmp/project/org.eclipse.jgit.junit/target/org.eclipse.jgit.junit-6.6.0.202305301015-r-endor-2024-11-25.jar
+[INFO] 
+[INFO] --- maven-javadoc-plugin:3.5.0:jar (default) @ org.eclipse.jgit.junit ---
+[INFO] Skipping javadoc generation
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.3.0:enforce (enforce-maven) @ org.eclipse.jgit.junit ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.3.0:parse-version (set-osgi-version) @ org.eclipse.jgit.junit ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.10:prepare-agent (default-prepare-agent) @ org.eclipse.jgit.junit ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-antrun-plugin:3.1.0:run (translate-qualifier) @ org.eclipse.jgit.junit ---
+[INFO] Executing tasks
+[INFO]      [copy] Copying 1 file to /tmp/project/org.eclipse.jgit.junit/target/META-INF
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-antrun-plugin:3.1.0:run (translate-source-qualifier) @ org.eclipse.jgit.junit ---
+[INFO] Executing tasks
+[INFO]      [copy] Copying 1 file to /tmp/project/org.eclipse.jgit.junit/target/META-INF
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ org.eclipse.jgit.junit ---
+[INFO] Copying 1 resource from  to target/classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.11.0:compile (default-compile) @ org.eclipse.jgit.junit ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling with eclipse [debug deprecation release 11] to target/classes
+[INFO] 
+[INFO] >>> maven-source-plugin:3.2.1:jar (attach-sources) > generate-sources @ org.eclipse.jgit.junit >>>
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.3.0:enforce (enforce-maven) @ org.eclipse.jgit.junit ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.3.0:parse-version (set-osgi-version) @ org.eclipse.jgit.junit ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.10:prepare-agent (default-prepare-agent) @ org.eclipse.jgit.junit ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] <<< maven-source-plugin:3.2.1:jar (attach-sources) < generate-sources @ org.eclipse.jgit.junit <<<
+[INFO] 
+[INFO] 
+[INFO] --- maven-source-plugin:3.2.1:jar (attach-sources) @ org.eclipse.jgit.junit ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ org.eclipse.jgit.junit ---
+[INFO] skip non existing resourceDirectory /tmp/project/org.eclipse.jgit.junit/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.11.0:testCompile (default-testCompile) @ org.eclipse.jgit.junit ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0:test (default-test) @ org.eclipse.jgit.junit ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.3.0:jar (default-jar) @ org.eclipse.jgit.junit ---
+[INFO] Building jar: /tmp/project/org.eclipse.jgit.junit/target/org.eclipse.jgit.junit-6.6.0.202305301015-r-endor-2024-11-25.jar
+[INFO] 
+[INFO] --- maven-javadoc-plugin:3.5.0:jar (default) @ org.eclipse.jgit.junit ---
+[INFO] Skipping javadoc generation
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.10:report (default-report) @ org.eclipse.jgit.junit ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.10:check (default-check) @ org.eclipse.jgit.junit ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- maven-install-plugin:3.1.1:install (default-install) @ org.eclipse.jgit.junit ---
+[INFO] Installing /tmp/project/org.eclipse.jgit.junit/pom.xml to /var/maven/.m2/repository/org/eclipse/jgit/org.eclipse.jgit.junit/6.6.0.202305301015-r-endor-2024-11-25/org.eclipse.jgit.junit-6.6.0.202305301015-r-endor-2024-11-25.pom
+[INFO] Installing /tmp/project/org.eclipse.jgit.junit/target/org.eclipse.jgit.junit-6.6.0.202305301015-r-endor-2024-11-25.jar to /var/maven/.m2/repository/org/eclipse/jgit/org.eclipse.jgit.junit/6.6.0.202305301015-r-endor-2024-11-25/org.eclipse.jgit.junit-6.6.0.202305301015-r-endor-2024-11-25.jar
+[INFO] Installing /tmp/project/org.eclipse.jgit.junit/target/org.eclipse.jgit.junit-6.6.0.202305301015-r-endor-2024-11-25-sources.jar to /var/maven/.m2/repository/org/eclipse/jgit/org.eclipse.jgit.junit/6.6.0.202305301015-r-endor-2024-11-25/org.eclipse.jgit.junit-6.6.0.202305301015-r-endor-2024-11-25-sources.jar
+[INFO] Installing /tmp/project/org.eclipse.jgit.junit/target/org.eclipse.jgit.junit-6.6.0.202305301015-r-endor-2024-11-25-sources.jar to /var/maven/.m2/repository/org/eclipse/jgit/org.eclipse.jgit.junit/6.6.0.202305301015-r-endor-2024-11-25/org.eclipse.jgit.junit-6.6.0.202305301015-r-endor-2024-11-25-sources.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for JGit - Core 6.6.0.202305301015-r-endor-2024-11-25:
+[INFO] 
+[INFO] JGit - Core ........................................ SUCCESS [ 16.658 s]
+[INFO] JGit - JUnit Utility Classes ....................... SUCCESS [  1.429 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  18.309 s (Wall Clock)
+[INFO] Finished at: 2025-03-24T21:40:19Z
+[INFO] ------------------------------------------------------------------------
+~/.cache/bazel/_bazel_runner/47e90624d37f4ce04f6ae9cb328f6bdd/sandbox/linux-sandbox/2/execroot/jgit

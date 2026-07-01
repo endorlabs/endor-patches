@@ -1,0 +1,8 @@
+821c773baa1b8121d1302404a143eb9ed4f84c9a3409fbc81d63fecf48471fbe  woodstox-core-6.3.1-endor-2024-09-03.jar
+
+To verify:
+  sha256sum woodstox-core-6.3.1-endor-2024-09-03.jar
+
+Produced by Endor Labs on 2024-09-03.
+Upstream version: com.fasterxml.woodstox:woodstox-core:6.3.1
+Patch applied: CVE-2022-40152 (GHSA-3f7h-mf4q-vrm4)

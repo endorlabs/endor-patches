@@ -1,0 +1,8 @@
+e3dce31a9c0b63591bbc8988a7a4e3d4ecb47898ca90d5e1ae8087d757d86f36  org.eclipse.jgit-6.6.0.202305301015-r-endor-2024-11-25.jar
+
+To verify:
+  sha256sum org.eclipse.jgit-6.6.0.202305301015-r-endor-2024-11-25.jar
+
+Produced by Endor Labs on 2024-11-25, released 2025-03-24.
+Upstream version: org.eclipse.jgit:org.eclipse.jgit:6.6.0.202305301015-r
+Patch applied: CVE-2023-4759 (GHSA-3p86-9955-h393)

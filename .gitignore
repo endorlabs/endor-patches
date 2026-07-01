@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor / IDE
+.idea/
+*.iml
+.vscode/
+*.swp
+*~
+
+# Java / Gradle (local rebuilds from BUILD.md)
+target/
+build/
+.gradle/
+*.class
+
+# Secrets and local env
+.env
+.env.*
+*.pem
+*.key
