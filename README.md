@@ -1,4 +1,4 @@
-# endor-patches-open-source
+# Endor Patches
 
 Security backports for widely-used Java libraries, produced by [Endor Labs](https://www.endorlabs.com). This repository contains two fully attested example patches that demonstrate the complete Endor Patches workflow: from CVE fix through hermetic build, upstream test verification, and transparent deployment.
 
