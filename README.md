@@ -74,6 +74,32 @@ A patch entry that contains only `COMMIT_TYPE_UPSTREAM` commits means Endor Labs
 
 ---
 
+## Reproducible build source
+
+Each patch directory includes a source tarball that contains everything needed to reproduce the patched artifact from scratch.
+
+| Library | Tarball |
+|---------|---------|
+| `com.fasterxml.woodstox:woodstox-core` | `patches/woodstox-core-6.3.1/woodstox-core-6.3.1-source.tar.gz` |
+| `org.eclipse.jgit:org.eclipse.jgit` | `patches/org.eclipse.jgit-6.6.0.202305301015-r/jgit-6.6.0-source.tar.gz` |
+
+### What each tarball contains
+
+| Entry | Description |
+|-------|-------------|
+| `WORKSPACE` | Bazel workspace file that fetches the upstream source at a pinned commit SHA and applies the patches. Defines three `http_archive` targets: the bare version, `-endor-YYYY-MM-DD`, and `-endor-latest`. |
+| `BUILD.bazel` | Top-level Bazel build file wiring the workspace targets. |
+| `.bazelrc` / `.bazeliskrc` | Bazel configuration and Bazelisk version pin used during the hermetic build. |
+| `patches/build/` | Build-system patches applied to the upstream source so it compiles inside the hermetic Docker container (e.g. module pruning, Maven version pinning). |
+| `patches/vulnerabilities/` | Security patches containing the backported CVE fixes. |
+| `<source-dir>/BUILD.bazel` | Per-module Bazel build file replacing the upstream Bazel rules with a simple `filegroup` for Docker container mounting. |
+
+### Building from source
+
+Reproducing the patched artifact requires **Docker** and **Bazel** installed in the host. Extract the tarball and follow the build commands in the `README.md` included inside it.
+
+---
+
 ## Using the patched JARs from this repository
 
 The patched JARs are in `patches/<library>/artifacts/`. Follow these steps to install and use them.
@@ -179,20 +205,22 @@ configurations.all {
 ```
 patches/
 ├── woodstox-core-6.3.1/
-│   ├── security_attestation.json   # code diffs, CVE mapping, commit provenance
-│   ├── build_logs.txt              # full hermetic build output
-│   ├── test_logs.txt               # full upstream test suite output
-│   ├── deploy_logs.txt             # full deploy output
-│   ├── SHA256SUM.txt               # SHA256 of the published JAR
+│   ├── security_attestation.json          # code diffs, CVE mapping, commit provenance
+│   ├── build_logs.txt                     # full hermetic build output
+│   ├── test_logs.txt                      # full upstream test suite output
+│   ├── deploy_logs.txt                    # full deploy output
+│   ├── SHA256SUM.txt                      # SHA256 of the published JAR
+│   ├── woodstox-core-6.3.1-source.tar.gz # reproducible build source (requires Docker + Bazel)
 │   └── artifacts/
 │       ├── woodstox-core-6.3.1-endor-2024-09-03.jar
 │       └── woodstox-core-6.3.1-endor-2024-09-03.pom
 └── org.eclipse.jgit-6.6.0.202305301015-r/
-    ├── security_attestation.json
-    ├── build_logs.txt
-    ├── test_logs.txt
-    ├── deploy_logs.txt
-    ├── SHA256SUM.txt
+    ├── security_attestation.json          # code diffs, CVE mapping, commit provenance
+    ├── build_logs.txt                     # full hermetic build output
+    ├── test_logs.txt                      # full upstream test suite output
+    ├── deploy_logs.txt                    # full deploy output
+    ├── SHA256SUM.txt                      # SHA256 of the published JAR
+    ├── jgit-6.6.0-source.tar.gz          # reproducible build source (requires Docker + Bazel)
     └── artifacts/
         ├── org.eclipse.jgit-6.6.0.202305301015-r-endor-2024-11-25.jar
         └── org.eclipse.jgit-6.6.0.202305301015-r-endor-2024-11-25.pom
@@ -208,4 +236,4 @@ Patch documentation and scripts in this repository are released under [Apache 2.
 
 ## Contact
 
-Patches are produced by [Endor Labs](https://www.endorlabs.com). To learn more about Endor Patches, visit [endorlabs.com/lp/patches](https://www.endorlabs.com/lp/patches) or the [Endor Patches documentation](https://docs.endorlabs.com/risk-remediation/endor-patches). To report an issue with a patched artifact, open an issue in this repository.
+Patches are produced by [Endor Labs](https://www.endorlabs.com). To learn more about Endor Patches, visit [endorlabs.com/lp/patches](https://www.endorlabs.com/lp/patches) or the [Endor Patches documentation](https://docs.endorlabs.com/risk-remediation/endor-patches). 
