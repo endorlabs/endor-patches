@@ -6,9 +6,9 @@ Learn more: [Endor Patches](https://www.endorlabs.com/lp/patches) | [Documentati
 
 ---
 
-## What is Endor Patches?
+## What are Endor Patches?
 
-Endor Patches is a curated collection of software packages with backported vulnerability fixes. Endor Labs identifies vulnerable functions and the upstream commits that fixed each vulnerability, then applies those fixes to older versions that **cannot be upgraded** to the next major release without breaking API or runtime compatibility.
+Endor Patches are a curated collection of software packages with backported vulnerability fixes. Endor Labs identifies vulnerable functions and the upstream commits that fixed each vulnerability, then applies those fixes to older versions that **cannot be upgraded** to the next major release without breaking API or runtime compatibility.
 
 The result is a minimum viable security patch: the smallest possible change to neutralize a known CVE, without forcing a disruptive version bump across your dependency tree.
 
