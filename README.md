@@ -109,12 +109,16 @@ The patched JARs are in `patches/<library>/artifacts/`. Follow these steps to in
 Always verify the SHA256 before installing. Expected hashes are in `SHA256SUM.txt` in each patch directory.
 
 ```bash
-# woodstox-core
+# Linux
 sha256sum patches/woodstox-core-6.3.1/artifacts/woodstox-core-6.3.1-endor-2024-09-03.jar
+# macOS
+shasum -a 256 patches/woodstox-core-6.3.1/artifacts/woodstox-core-6.3.1-endor-2024-09-03.jar
 # expected: 821c773baa1b8121d1302404a143eb9ed4f84c9a3409fbc81d63fecf48471fbe
 
-# org.eclipse.jgit
+# Linux
 sha256sum patches/org.eclipse.jgit-6.6.0.202305301015-r/artifacts/org.eclipse.jgit-6.6.0.202305301015-r-endor-2024-11-25.jar
+# macOS
+shasum -a 256 patches/org.eclipse.jgit-6.6.0.202305301015-r/artifacts/org.eclipse.jgit-6.6.0.202305301015-r-endor-2024-11-25.jar
 # expected: e3dce31a9c0b63591bbc8988a7a4e3d4ecb47898ca90d5e1ae8087d757d86f36
 ```
 
@@ -127,8 +131,7 @@ mvn install:install-file \
   -DpomFile=patches/woodstox-core-6.3.1/artifacts/woodstox-core-6.3.1-endor-2024-09-03.pom \
   -DgroupId=com.fasterxml.woodstox \
   -DartifactId=woodstox-core \
-  -Dversion=6.3.1-endor-2024-09-03 \
-  -Dpackaging=jar
+  -Dversion=6.3.1-endor-2024-09-03
 
 # org.eclipse.jgit
 mvn install:install-file \
@@ -136,8 +139,7 @@ mvn install:install-file \
   -DpomFile=patches/org.eclipse.jgit-6.6.0.202305301015-r/artifacts/org.eclipse.jgit-6.6.0.202305301015-r-endor-2024-11-25.pom \
   -DgroupId=org.eclipse.jgit \
   -DartifactId=org.eclipse.jgit \
-  -Dversion=6.6.0.202305301015-r-endor-2024-11-25 \
-  -Dpackaging=jar
+  -Dversion=6.6.0.202305301015-r-endor-2024-11-25
 ```
 
 ### Step 3: Declare the dependency
